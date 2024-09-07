@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+  display: grid;
+}
+
+.container {
+  width: 35%;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.container h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin: 5px 0;
+}
+
+.view_image {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.view_image img {
+  width: 400px;
+  height: 360px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.view_image:hover img {
+  transform: scale(1.05);
+}
+
+.choose_image {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  background-color: white;
+}
+
+.disabled .view_image {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.choose_image button {
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: hsl(61, 100%, 50%);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choose_image button:hover {
+  background-color: hsl(61, 100%, 40%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.choose_image button img {
+  width: 25px;
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.disabled .slider {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.slider input[type="range"] {
+  width: 100%;
+}
+
+.filter_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.icons_filter {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+.disabled .icons_filter {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.icons_filter p {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.icons_room {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons_room button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icons_room button img {
+  width: 25px;
+}
+
+.icons_room button:hover {
+  transform: scale(1.1);
+}
+
+.active {
+  background-color: rgb(255, 72, 0) !important;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.icons_room1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons_room1 button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icons_room1 button img {
+  width: 25px;
+}
+
+.icons_room1 button:hover {
+  transform: scale(1.1);
+}
+
+.active {
+  background-color: rgb(255, 72, 0) !important;
+  padding: 10px;
+  border-radius: 30%;
+}
+
+.button_contain {
+  width: 100%;
+  position: relative;
+  margin: 5px 0;
+}
+
+.disabled .button_contain {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.button_contain button {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button_contain {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button_contain button:first-child {
+  border: 1px solid rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.button_contain button:first-child:hover {
+  border: none;
+  background-color: red;
+  color: white;
+  transform: scale(1.05);
+}
+
+.button_contain button:last-child {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: green;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.button_contain button:last-child:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+@media (max-width: 708px) {
+  .container {
+    width: 100%;
+  }
+}

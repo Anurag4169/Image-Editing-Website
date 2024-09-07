@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editing Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+
+</head>
+
+<body>
+    <script src="Java Script/script.js"></script>
+    <div class="container disabled">
+        <h1>Image Editor</h1>
+        <hr />
+
+        <div class="view_image">
+            <img src="image/upload.png" alt="Img 1">
+
+        </div>
+
+        <div class="choose_image">
+            <button>Upload Image<img src="image/upload2.png" alt=""></button>
+            <input type="file" name="" id="" accept="image/*" hidden />
+
+        </div>
+        <div class="slider">
+            <div class="filter_info">
+                <span class="name">brightness</span>
+                <span class="Value">100%</span>
+
+
+            </div>
+            <input type="range" name="" id="" max="200" min="0" />
+
+        </div>
+
+        <div class="icons_filter">
+            <p>Filters</p>
+
+            <div class="icons_room">
+                <button title="brightness" id="brightness" class="active"> <img src="image/brightness.png"
+                        alt=""></button>
+                <button title="contrast" id="contrast"> <img src="image/contrast.png" alt=""></button>
+                <button title="saturate" id="saturate"> <img src="image/opacity.png" alt=""></button>
+                <button title="invert" id="invert"> <img src="image/recolour.png" alt=""></button>
+                <button title="blur" id="blur"> <img src="image/blur.png" alt=""></button>
+
+            </div>
+        </div>
+
+        <div class="icons_filter">
+            <p>Rotate & Flip</p>
+
+            <div class="icons_room1">
+                <button> <img src="image/rotateleft.png" alt=""></button>
+                <button> <img src="image/rotateright.png" alt=""></button>
+                <button> <img src="image/flip.png" alt=""></button>
+                <button> <img src="image/flip2.png" alt=""></button>
+
+            </div>
+        </div>
+
+
+        <div class="button_contain">
+            <button class="reset">Reset Filter</button>
+            <button class="save">Save Image</button>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
